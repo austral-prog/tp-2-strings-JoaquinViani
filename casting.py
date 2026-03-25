@@ -1,21 +1,12 @@
-def change():
-    print("Ingresar gasto:")
-    gasto = float(input())
-    print(gasto)
+def casting():
+    """Lee precio, descuento y cantidad como texto y calcula el precio con descuento y el total."""
 
-    print("Dinero recibido")
-    dinero = int(input())
-    print(dinero)
+    precio = int(input("Ingresa el precio: "))
+    descuento = float(input("Ingresa el descuento: "))
+    cantidad = int(input("cantidad de veces: "))
 
-    vuelto = dinero - gasto
+    print(f"\nPrecio: {precio}")
+    print(f"Descuento: {descuento}")
+    print(f"Precio con descuento: {precio - descuento}")
+    print(f"Total: {(precio - descuento)*3}")
 
-    pesos = int(vuelto)
-    centavos = int(round((vuelto - pesos) * 100))
-
-    print()
-    print("Vuelto")
-    print()
-    print("Pesos:")
-    print(pesos)
-    print("Centavos:")
-    print(centavos)
