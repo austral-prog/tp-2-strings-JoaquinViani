@@ -5,5 +5,3 @@ def slice_advanced():
 
     nombre = input("Ingresa una frase: ")
     print(nombre[4::2])
-
-slice_advanced()
