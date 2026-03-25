@@ -70,5 +70,3 @@ def ficha():
     print(f"Promedio entero: {promedio_entero}")
     print("=" * 24)
 
-
-ficha()
