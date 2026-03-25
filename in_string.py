@@ -1,19 +1,9 @@
 def check_vowels():
-    """Lee un nombre y verifica si contiene cada una de las vocales (a, e, i, o, u),
-    sin distinguir mayúsculas de minúsculas.
-    """
+    nombre = input()
+    nombre = nombre.lower()
 
-    nombre = input("Ingresa su nombre: ")
-    nombre_minuscula = nombre.lower()
-
-    A = ("a" in nombre_minuscula)
-    E = ("e" in nombre_minuscula)
-    I = ("i" in nombre_minuscula)
-    O = ("o" in nombre_minuscula)
-    U = ("u" in nombre_minuscula)
-
-    print (f"Contiene a: {A}")
-    print (f"Contiene a: {E}")
-    print (f"Contiene a: {I}")
-    print (f"Contiene a: {O}")
-    print (f"Contiene a: {U}")
+    print(f"Contiene a: {'a' in nombre}")
+    print(f"Contiene e: {'e' in nombre}")
+    print(f"Contiene i: {'i' in nombre}")
+    print(f"Contiene o: {'o' in nombre}")
+    print(f"Contiene u: {'u' in nombre}")
